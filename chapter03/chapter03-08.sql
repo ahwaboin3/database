@@ -106,6 +106,30 @@ and o.bookid=b.bookid
 group by name
 having count(distinct b.publisher)>=2;
 
+-- 두 개 이상의 서로 다른 출판사에서 도서를 구매한 고객의 이름
+select c.name,count(b.publisher)
+from customer c,orders o, book b
+where c.custid=o.custid
+and b.bookid=o.bookid
+group by name
+having count(distinct b.publisher)>=2;
+
+-- 전체 고객의 30% 이상이 구매한 도서
+select bookname
+from book b1
+where (
+    (select count(b2.bookid)
+    from book b2, orders o
+    where b2.bookid=o.bookid
+    and b1.bookid=b2.bookid)
+    >=0.3*(
+        select count(*)
+        from customer
+        )
+);
+select count(*) from customer;
+select count(bookid) from orders
+group by bookid;
 
 
 

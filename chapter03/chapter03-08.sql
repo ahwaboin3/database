@@ -98,12 +98,13 @@ where 2>=( --구입한 출판사 개수
     and c2.name like c1.name
 );
 
+-- 두 개 이상의 서로 다른 출판사에서 도서를 구매한 고객의 이름
 select name,count(distinct b.publisher)
-    from customer c2,orders o, book b
-    where c2.custid=o.custid
-    and o.bookid=b.bookid
+from customer c2,orders o, book b
+where c2.custid=o.custid
+and o.bookid=b.bookid
 group by name
-having ount(distinct b.publisher)>=2;
+having count(distinct b.publisher)>=2;
 
 
 

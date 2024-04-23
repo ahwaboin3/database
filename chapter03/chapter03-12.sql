@@ -35,7 +35,7 @@ create table reservation(
 -- 예) varchar2(20)
 -- 20byte -> 유니코드(unicode)는 한글자에 2byte
 -- 10글자정도 넣을 수 있는 크기
-create table customer(
+create table movie_customer(
     cusid number primary key,
     cusname varchar2(50),
     cusaddr varchar2(300)

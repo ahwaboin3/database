@@ -1,4 +1,4 @@
---Documents\dev\database\workspace\chapter03\chapter03-11.sql
+--Documents\dev\database\workspace\chapter03\chapter03-12.sql
 
 -- 연습 문제 풀이
 

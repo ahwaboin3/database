@@ -62,11 +62,34 @@ where t.ttid=r.ttid and r.cusid=mc.cusid
 and t.ttname like '대한';
 --3. 대한 극장의 전체 수입을 보이시오.
 select sum(c.movieprice)
-from theater t, cinema c, reservation r
-where t.ttid=c.ttid and c.ttid=r.ttid
-and t.ttname like '대한';
+from cinema c
+where c.ttid in(
+select r.ttid
+from theater t ,reservation r
+where t.ttid=r.ttid
+and t.ttname like '대한');
+
 --(4)그룹질의
 --1. 극장별 상영관 수를 보이시오.
+select ttid,count(*) from cinema
+group by ttid;
+
+--2. 잠실에 있는 극장의 상영관을 보이시오.
+select * from theater t, cinema c
+where t.ttid=c.ttid and t.ttlocation like '잠실';
+
+--3. 2020년 9월 1일에 극장별 관람 고객의 수를 보이시오.
+select count(cusid) from reservation
+where rdate = '20-09-01'
+group by rdate;
+
+select * from reservation;
+
+-- 4. 2020년 9월 1일에 가장 많은 고객이 관람한 영화를 보이시오.
+select * from reservation;
+
+
+
 
 
 

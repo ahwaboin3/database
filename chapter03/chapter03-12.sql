@@ -69,7 +69,7 @@ create table sales_customer(
 
 -- [기업 프로젝트 데이터베이스]
 -- 직원 테이블 생성
-create table employee(
+create table b_employee(
     empno number primary key,
     name varchar2(50),
     phoneno varchar2(20),
@@ -80,26 +80,26 @@ create table employee(
 );
 
 -- 부서 테이블 생성
-create table department(
+create table b_department(
     deptno number primary key,
     deptname varchar2(50),
     manager varchar2(10)
 );
 -- 프로젝트 테이블 생성
-create table project(
+create table b_project(
     projno number primary key,
     projname varchar2(50),
     deptno number
 );
 
 -- 작업 테이블 생성
-create table works(
+create table b_works(
     empno number,
     projno number,
     hours_worked number,
     primary key(empno, projno),
-    foreign key(empno) references employee(empno),
-    foreign key(projno) references project(projno)
+    foreign key(empno) references b_employee(empno),
+    foreign key(projno) references b_project(projno)
 );
 
 

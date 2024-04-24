@@ -38,15 +38,35 @@ select salesperson, count(*) from sales_order group by salesperson;
 -- 7. 'LA'에 사는 고객으로부터 주문을 받은 판매원의 이름과 나이를 보이시오
 -- (부속질의 사용)
 -- sales_customer테이블의 기본키를 onumber속성으로 변경
-alter table sales_customer drop primary key;
-alter table sales_customer add primary key(onumber);
+select name,age from sales_person
+where name in
+(select salesperson from sales_order
+where custname in 
+(select name from sales_customer where city='LA'));
+
+ 
 insert into sales_customer values('김고객6','LA','직업6');
 insert into sales_customer values('김고객7','LA','직업7');
 insert into sales_order values(6,'김고객6','김판매1',1006);
 insert into sales_order values(7,'김고객6','김판매1',1007);
 insert into sales_order values(8,'김고객6','김판매3',1008);
 
+-- 8. LA에 사는 고객으로 부터 주문을 받은 판매원의 이름과 나이를 보이시오
+--(조인을 사용)
+select p.name,p.age 
+from sales_customer c, sales_order o, sales_person p
+where c.name=o.custname 
+and o.salesperson=p.name
+and c.city like 'LA';
 
+--9. 두 번 이상 주문을 받은 판매원의 이름을 보이시오.
+select salesperson from sales_order
+group by salesperson having count(*)>=2;
+
+--10. 판매원 TOM의 봉급을 45,000원으로 변경하는 sql문을 작성하시오.
+insert into sales_person values('TOM',38,2008);
+update sales_person set salary=45000 where name like 'TOM';
+select * from sales_person where name like 'TOM';
 
 
 

@@ -83,7 +83,7 @@ create table b_employee(
 create table b_department(
     deptno number primary key,
     deptname varchar2(50),
-    manager varchar2(10)
+    manager number
 );
 -- 프로젝트 테이블 생성
 create table b_project(

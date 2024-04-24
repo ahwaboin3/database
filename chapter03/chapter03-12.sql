@@ -50,12 +50,13 @@ create table sales_person(
 );
 
 --주문 테이블 생성
+drop table sales_order;
 create table sales_order(
     onumber number,
     custname varchar2(50),
     salesperson varchar(50),
     amount number,
-    primary key (custname,salesperson),
+    primary key (onumber),
     foreign key(custname) references sales_customer(name),
     foreign key(salesperson) references sales_person(name)
 );

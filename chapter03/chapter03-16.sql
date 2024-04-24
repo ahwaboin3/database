@@ -80,12 +80,33 @@ insert into b_works values(9,1,300);
 insert into b_project values(2,'기업인트라넷구축',3);
 insert into b_works values(10,2,100);
 
-select projno,projname
+select projno,projname,count(*)
 from b_project
 where projno=
 (select projno from b_works 
 group by projno
 having count(*)>1);
+
+select p.projno,p.projname,count(*)
+from b_project p inner join b_works w
+on p.projno=w.projno
+group by p.projno,p.projname
+having count(*)>1;
+
+select p.projno,p.projname,count(*) as 사원수
+from b_project p, b_works w
+where p.projno=w.projno
+group by p.projno,p.projname
+having count(*)>1;
+
+-- 9. 3명 이상의 사원이 있는 부서의 사원 이름을 보이시오.
+select name
+from b_employee
+where deptno in
+(select deptno from b_employee
+group by  deptno having count(*)>=3);
+
+
 
 
 

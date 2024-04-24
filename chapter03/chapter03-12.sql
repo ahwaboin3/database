@@ -43,14 +43,14 @@ create table movie_customer(
 
 -- [판매원 데이터베이스]
 -- 판매원 테이블 생성
-create table salesperson(
+create table sales_person(
     name varchar2(100) primary key,
     age number,
     salary number
 );
 
 --주문 테이블 생성
-create table order(
+create table sales_order(
     onumber number,
     custname varchar2(50),
     salesperson varchar(50),
@@ -60,7 +60,7 @@ create table order(
     foreign key(salesperson) references salesperson(name)
 );
 -- 고객 테이블 생성
-create table customer(
+create table sales_customer(
     name varchar2(50) primary key,
     city varchar2(50),
     industrytype varchar2(50)

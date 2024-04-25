@@ -118,7 +118,16 @@ select * from orders;
 
 -- 인라인 뷰 - from 부속질의
 -- 뷰는 기존 테이블로부터 일시적으로 만들어진 가상의 테이블을 말한다
--- 
+
+-- 고객번호가 2 이하인 고객의 판매액을 보이시오(고객 이름과 고객별 판매액 출력)
+select c.name,sum(o.saleprice)
+from (select custid, name
+    from customer where custid<=2) c,
+    orders o
+where c.custid=o.custid
+group by c.name;
+-- customer 테이블에서 필요한 데이터만 뽑아 조인시킬 수 있으므로
+-- 처리 성능을 높일 수 있다
 
 
 

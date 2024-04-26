@@ -53,6 +53,33 @@ where od.custid=cs.custid and od.bookid=bk.bookid;
 select orderid, bookname, saleprice from vw_orders
 where name='김연아';
 
+-- 뷰의 수정
+-- 문법
+-- create or replace view 뷰이름 [(열이름[,...n])]
+-- as select 문
+
+-- vw_customer는 주소가 '대한민국'인 고객을 보여 준다.
+-- 이 뷰를 '영국'을 주소로 가진 고객으로 변경하시오.
+-- phone속성은 필요 없으므로 포함하지 마시오.
+create or replace view vw_customer(custid,name,address)
+as select custid, name, address
+    from customer
+    where address like '%영국%';
+select * from vw_customer;
+
+--뷰의 삭제
+-- drop view 뷰이름 [,...n];
+
+-- vw_customer를 삭제하시오
+drop view vw_customer;
+select * from vw_customer;
+
+
+
+
+
+
+
 
 
 

@@ -52,7 +52,43 @@ select count(*) from summer;
 -- sql문을 만들어야 하는 단점이 있다
 select count(sid) from summer;
 -- 삽입이상
+-- 자바 강좌가 새로 개설되었다
+-- 수강료는 25000원이고 아직 신청한 학생은 없다
+-- 자바 강좌를 추가하기 위해 insert문을 사용하는데
+-- 신청한 학생이 없어 학번에는 null 값이 입력 되었다
+-- null 값은 집계 함수 사용 시 원하지 않는 결과를 만들어 냈다
 
+-- fortran 강좌의 수강료를 20000원에서 15000원으로 수정하시오
+update summer set price=15000 where class='fortran' and sid=100;
+
+-- fortran 수강료를 조회
+select price from summer where class='fortran';
+-- 두건이 조회되어 데이터 불일치 문제 발생
+
+-- 수정이상
+-- fortran 강좌의 수강료가 20000원에서 15000원으로 변경되어
+-- update문을 이용하여 수정하였다.
+-- update문은 조건에 맞는 값을 일괄 수정하지만,
+-- 조건을 잘못 주면 데이터 불일치 문제가 발생한다
+
+-- 수정된 계절하기 수강 테이블
+-- 테이블의 구조를 수정하여 이상현상이 발생하지 않도록 만든다
+-- summer 테이블은 summer_price와 summer_enroll테이블로 분리한다
+-- summer_price 테이블은 과목에 대한 수걍료 정보를 저장
+-- summer_enroll 테이블은 학생들의 수강신청 정보를 저장
+
+DROP TABLE SummerPrice; /* 기존 테이블이 있으면 삭제 */
+DROP TABLE SummerEnroll; /* 기존 테이블이 있으면 삭제 */
+/* SummerPrice 테이블 생성 */
+CREATE TABLE SummerPrice
+( class VARCHAR(20),
+  price INTEGER
+);
+INSERT INTO SummerPrice VALUES ('FORTRAN', 20000);
+INSERT INTO SummerPrice VALUES ('PASCAL', 15000);
+INSERT INTO SummerPrice VALUES ('C', 10000);
+
+select * from summerprice;
 
 
 

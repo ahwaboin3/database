@@ -7,3 +7,13 @@ system
 비밀번호 저장 체크
 서비스이름
 xepdb1
+
+name
+pdb1_mdguest
+사용자 이름
+mdguest
+비밀번호
+mdguest
+비밀번호 저장 체크
+서비스이름
+xepdb1

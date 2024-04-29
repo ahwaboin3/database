@@ -1,0 +1,9 @@
+name
+pdb1_system
+사용자 이름
+system
+비밀번호
+1234
+비밀번호 저장 체크
+서비스이름
+xepdb1

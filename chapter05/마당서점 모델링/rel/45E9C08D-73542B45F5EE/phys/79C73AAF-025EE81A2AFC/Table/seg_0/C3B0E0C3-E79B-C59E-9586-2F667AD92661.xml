@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ORDERS" directorySegmentName="seg_0" id="C3B0E0C3-E79B-C59E-9586-2F667AD92661">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<schemaObject>97337361-DD8F-6C65-8E52-11691A24B1BE</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2DF1449C-A65B-F2CB-D251-CAC6C2C7393F</segment>
+<tableSpace>FA4293BE-82C8-CEA9-D339-20D23BA64F35</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ORDERID" id="1C52DD40-F20C-41F0-3578-C35165DCAC9E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALEPRICE" id="833E17DB-784B-7C43-27ED-F0B2F661A9B8">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDERDATE" id="884A0F3A-7EF7-E12A-1741-3EE47A5F0A3A">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BOOKNAME" id="BD91ABF6-2E23-CD2A-473A-4D9CABA8F64E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BOOKID" id="C117A0C8-CCAF-E841-CDC5-B1FC25F9D471">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTID" id="F5C7DEE2-76C8-3263-9B9D-F029D59D9572">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007303" id="A3DB3C12-6C66-3982-3441-37D9F133C1B9">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007302" id="E79B086F-5F71-C246-5981-E4E5C887D11B">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ORDERS_PK" id="EAB46E64-152D-84EC-9048-DE4B6719D24A">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<schemaObject>97337361-DD8F-6C65-8E52-11691A24B1BE</schemaObject>
+<segment>AFA1CA10-66B0-3882-7DB8-1CD18281BF09</segment>
+<tableSpace>FA4293BE-82C8-CEA9-D339-20D23BA64F35</tableSpace>
+<indexSegment>AFA1CA10-66B0-3882-7DB8-1CD18281BF09</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

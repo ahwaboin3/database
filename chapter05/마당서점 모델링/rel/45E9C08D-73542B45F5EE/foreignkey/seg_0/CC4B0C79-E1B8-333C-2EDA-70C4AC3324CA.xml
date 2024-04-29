@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CC4B0C79-E1B8-333C-2EDA-70C4AC3324CA" containerWithKeyObject="C3B0E0C3-E79B-C59E-9586-2F667AD92661" localFKIndex="A3DB3C12-6C66-3982-3441-37D9F133C1B9" name="SYS_C007303">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>C##MADANG</sourceObjSchema>
+<sourceObjName>SYS_C007303</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<referredTableLongName>C##MADANG.BOOK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1CFB7F10-6074-CE68-E7C4-CBEA3289415E</referredTableID>
+<keyObject>5A813CB0-FBB9-B64A-8E61-7FA8B3F6773F</keyObject>
+<referredKeyID>5A813CB0-FBB9-B64A-8E61-7FA8B3F6773F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>BOOKID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

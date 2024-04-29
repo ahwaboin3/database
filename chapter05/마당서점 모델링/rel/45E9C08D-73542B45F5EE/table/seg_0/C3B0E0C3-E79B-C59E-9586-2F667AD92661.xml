@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3B0E0C3-E79B-C59E-9586-2F667AD92661" schemaObject="97337361-DD8F-6C65-8E52-11691A24B1BE" name="ORDERS">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>C##MADANG</sourceObjSchema>
+<sourceObjName>ORDERS</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDERID" id="1C52DD40-F20C-41F0-3578-C35165DCAC9E">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>ORDERID</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTID" id="F5C7DEE2-76C8-3263-9B9D-F029D59D9572">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>CUSTID</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27B2AB06-04ED-7ED2-2164-13557A9FB36E" referredColumn="77B3C39E-BB77-2E5C-12E2-ED1942A1D22D"/>
+</associations>
+</Column>
+<Column name="BOOKID" id="C117A0C8-CCAF-E841-CDC5-B1FC25F9D471">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>BOOKID</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC4B0C79-E1B8-333C-2EDA-70C4AC3324CA" referredColumn="92ED7E57-901C-8352-A6E1-80EE1F8BC7FC"/>
+</associations>
+</Column>
+<Column name="SALEPRICE" id="833E17DB-784B-7C43-27ED-F0B2F661A9B8">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>SALEPRICE</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDERDATE" id="884A0F3A-7EF7-E12A-1741-3EE47A5F0A3A">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>ORDERDATE</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOOKNAME" id="BD91ABF6-2E23-CD2A-473A-4D9CABA8F64E">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>ORDERS</sourceObjSchema>
+<sourceObjName>BOOKNAME</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAB46E64-152D-84EC-9048-DE4B6719D24A" schemaObject="97337361-DD8F-6C65-8E52-11691A24B1BE" name="ORDERS_PK">
+<sourceConnName>Madang</sourceConnName>
+<sourceObjSchema>C##MADANG</sourceObjSchema>
+<sourceObjName>SYS_C007301</sourceObjName>
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C52DD40-F20C-41F0-3578-C35165DCAC9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E79B086F-5F71-C246-5981-E4E5C887D11B" name="SYS_C007302">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5C7DEE2-76C8-3263-9B9D-F029D59D9572"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3DB3C12-6C66-3982-3441-37D9F133C1B9" name="SYS_C007303">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:38:59 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C117A0C8-CCAF-E841-CDC5-B1FC25F9D471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

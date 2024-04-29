@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="163485DE-DFF0-3BA7-475D-4C64F41BA577">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:16:54 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

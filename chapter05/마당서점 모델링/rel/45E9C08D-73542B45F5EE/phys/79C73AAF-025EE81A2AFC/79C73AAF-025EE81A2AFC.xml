@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev12cR2 class="oracle.dbtools.crest.model.design.storage.oracle.v12cr2.StorageDesignOraclev12cR2" name="Oracle Database 12cR2" id="02ADCC10-D026-9B1A-20B6-E47DA7308C72" siteID="79C73AAF-E1A7-E669-7DF0-025EE81A2AFC" siteName="Oracle Database 12cR2" siteType="14">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:26:53 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+</StorageDesignOraclev12cR2>

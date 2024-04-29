@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="마당서점 모델링" id="06346D64-E017-59C5-459F-142E79EC9591" version="3.5">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:16:53 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>06346D64-E017-59C5-459F-142E79EC9591</designId>
+</OSDM_Design>

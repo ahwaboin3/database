@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="마당서점-물리적모델" id="45E9C08D-2040-08EE-B5AF-73542B45F5EE" mainViewID="F87937D9-4BA6-5F06-67B2-969DDF85562E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 03:17:36 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>Madang</connName>
+<connUser>C##MADANG</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

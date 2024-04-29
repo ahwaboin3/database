@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EAD4540E-068F-4292-3EEB-AFFBE20B37A1" containerWithKeyObject="C8402CB0-90CE-F32D-373F-BC4B3E9B1BFA" localFKIndex="AB08517B-71CA-345D-EF68-8FBF52523612" name="주문_도서_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:34 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<referredTableLongName>도서</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E5E1882-DBEA-F668-73A2-42D95D2E9E6C</referredTableID>
+<keyObject>E72E22CA-6657-2A07-CC1A-18B1C7D72758</keyObject>
+<referredKeyID>E72E22CA-6657-2A07-CC1A-18B1C7D72758</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>도서번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

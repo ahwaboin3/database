@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8402CB0-90CE-F32D-373F-BC4B3E9B1BFA" name="주문">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:42:42 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="주문일자" id="9B975000-13E8-3804-054D-A9D6A9C432A0">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:14 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="주문금액" id="CBD6E86C-BC38-354D-FD6D-EAF21BBEF607">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:14 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="도서_도서번호" id="DDBF14BF-400F-42AE-B76E-E69EBFA88C4E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:34 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAD4540E-068F-4292-3EEB-AFFBE20B37A1" referredColumn="08EE156E-F755-25E9-EFF9-FA6FBF46EEB2"/>
+</associations>
+</Column>
+<Column name="고객_고객번호" id="4C66A5F1-B342-2B51-E349-7F0CFCD4957E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:48 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDDA49CB-B7D6-D87C-A9D6-9B2313938AFB" referredColumn="3F80CE45-4132-FC82-4526-628DA51BDDF3"/>
+</associations>
+</Column>
+<Column name="주문번호" id="6BA47B47-83CB-00DD-5318-A8E7E0D6988B">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:44:33 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89CB7A58-0D40-DFAC-CFC0-36846B84175D" name="주문_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:44:33 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA47B47-83CB-00DD-5318-A8E7E0D6988B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB08517B-71CA-345D-EF68-8FBF52523612" name="주문_도서_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:34 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDBF14BF-400F-42AE-B76E-E69EBFA88C4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0702A4C-4BCD-EFCC-FCC4-5885CFE18275" name="주문_고객_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-26 02:43:48 UTC</createdTime>
+<ownerDesignName>마당서점 모델링</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C66A5F1-B342-2B51-E349-7F0CFCD4957E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

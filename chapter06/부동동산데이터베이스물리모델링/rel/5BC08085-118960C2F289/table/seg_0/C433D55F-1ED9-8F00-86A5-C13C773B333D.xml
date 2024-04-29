@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C433D55F-1ED9-8F00-86A5-C13C773B333D" name="owner">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:22:18 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="o_id" id="211C4FDA-88D3-2B09-7B99-7EDB851BB9A8">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:23:15 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="E7F6A7FA-1B82-825E-BAA6-4DF94A908330">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:23:45 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phonenumber" id="CD6C6FFD-A92A-BA17-D668-8DDB8508FF74">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:24:29 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="222F157F-A860-9DF3-51F4-7B2CA3F534F0" name="owner_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:23:15 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="211C4FDA-88D3-2B09-7B99-7EDB851BB9A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

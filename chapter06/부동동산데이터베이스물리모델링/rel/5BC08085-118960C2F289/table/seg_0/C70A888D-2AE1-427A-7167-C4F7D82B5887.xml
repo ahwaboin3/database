@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C70A888D-2AE1-427A-7167-C4F7D82B5887" name="property">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:16:01 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pid" id="935B60DA-E158-EAE3-E591-10A45D53D1F2">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:19:12 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr" id="3F82C315-C649-492A-663B-C1DB46607930">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:20:06 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pub_price" id="3378593F-0571-B25A-22AE-3B0AC3382EAE">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:22:09 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6065D6A5-B29A-75F5-7ED9-DDB0FE803EF3" name="property_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:19:12 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="935B60DA-E158-EAE3-E591-10A45D53D1F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

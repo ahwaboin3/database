@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="부동동산데이터베이스물리모델링" id="DFE6A0FB-FEC4-9E8F-6F6F-7B7E89771F89" version="3.5">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-29 03:11:04 UTC</createdTime>
+<ownerDesignName>부동동산데이터베이스물리모델링</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DFE6A0FB-FEC4-9E8F-6F6F-7B7E89771F89</designId>
+</OSDM_Design>

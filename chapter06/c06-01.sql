@@ -90,7 +90,48 @@ INSERT INTO SummerPrice VALUES ('C', 10000);
 
 select * from summerprice;
 
+-- 새로운 단어가 조합될때 일반적으로 테이블이나 속성이름은 _를 삽입한다
+-- 예) summer_price, summer_enroll
 
+-- summerenroll 테이블 생성
+create table summerenroll(
+    sid integer,
+    class varchar(20)
+);
+insert into summerenroll values (100,'fortran');
+insert into summerenroll values (150,'pascal');
+insert into summerenroll values (200,'c');
+insert into summerenroll values (250,'fortran');
+select* from summerenroll;
 
+-- 200번 학생의 계절학기 수강신청을 취소하시오
+-- C 강좌 수강료 조회
+select price from summerprice where class='C' or class='c';
+-- 수강취소
+delete from summerenroll where sid=200;
+select * from summerenroll;
+-- C 강좌 수강료 조회
+select price from summerprice where class='C' or class='c';
+-- 삭제이상 없음
+-- 200번 학생이 수강신청 취소도 잘 처리 되었고
+-- 연쇄삭제 현상은 나타나지 않았다
+-- C강좌의 수강료는 조회 가능하다
+
+-- 계절학기에 새로운 자바 강좌를 개설하시오.
+insert into summerprice values('java',25000);
+select * from summerprice;
+-- 삽입이상 없음
+-- 아직 신청한 학생은 없지만, null값을 입력할 필요가 없어
+-- 삽입이상 발생 없다
+
+-- fortran 강좌의 수강료를 20000원에서 15000원으로 수정하시오
+select * from summerprice;
+update summerprice set price=15000 where class='FORTRAN';
+select price from summerprice where class='FORTRAN';
+-- 수정이상 없음
+-- fortran과목의 수강료는 하나만 저정되어 있으므로 수정 후
+-- 데이터의 불일치를 우려할 필요가 없다
+
+-- 테이블의 분리를 통해 이상현상을 해결 할 수 있었다
 
 

@@ -1,0 +1,224 @@
+
+Table BOOK이(가) 생성되었습니다.
+
+
+명령의 159 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(1, '축구의 역사', '굿스포츠', 7000)
+오류 발생 명령행: 159 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 160 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(2, '축구아는 여자', '나무수', 13000)
+오류 발생 명령행: 160 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 161 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(3, '축구의 이해', '대한미디어', 22000)
+오류 발생 명령행: 161 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 162 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(4, '골프 바이블', '대한미디어', 35000)
+오류 발생 명령행: 162 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 163 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(5, '피겨 교본', '굿스포츠', 8000)
+오류 발생 명령행: 163 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 164 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(6, '역도 단계별기술', '굿스포츠', 6000)
+오류 발생 명령행: 164 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 165 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(7, '야구의 추억', '이상미디어', 20000)
+오류 발생 명령행: 165 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 166 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(8, '야구를 부탁해', '이상미디어', 13000)
+오류 발생 명령행: 166 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 167 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(9, '올림픽 이야기', '삼성당', 7500)
+오류 발생 명령행: 167 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 168 행에서 시작하는 중 오류 발생 -
+INSERT INTO Book VALUES(10, 'Olympic Champions', 'Pearson', 13000)
+오류 발생 명령행: 168 열: 13
+오류 보고 -
+SQL 오류: ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+명령의 145 행에서 시작하는 중 오류 발생 -
+grant connect, resource, unlimited tablespace to madang
+오류 보고 -
+ORA-01031: 권한이 불충분합니다
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+명령의 153 행에서 시작하는 중 오류 발생 -
+CREATE TABLE Book (
+bookid NUMBER(2) PRIMARY KEY,
+bookname VARCHAR2(40),
+publisher VARCHAR2(40),
+price NUMBER(8)
+)
+오류 보고 -
+ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+Table CUSTOMER이(가) 생성되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+Table ORDERS이(가) 생성되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+
+1 행 이(가) 삽입되었습니다.
+
+커밋 완료.
+
+Grant을(를) 성공했습니다.
+
+
+Grant을(를) 성공했습니다.
+

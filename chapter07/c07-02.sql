@@ -197,6 +197,34 @@ INSERT INTO Orders VALUES (10, 3, 8, 13000, TO_DATE('2020-07-10','yyyy-mm-dd'));
 
 commit;
 
+-- pdb1_madang 계정으로 접속
+-- mdguest에게 book 테이블의 select권한을 부여하시오
+grant select on book to mdguest;
+
+-- mdguest에게 customer테이블의 select, update 권한을
+-- with grant option과 함께 부여하시오.
+grant select, update on customer to mdguest with grant option;
+
+-- public은 모든 사용자에게 권한을 부여하는 명령이다
+-- orders테이블을 모든 사용자가 select할 수 있도록 권한을 부여하시오.
+grant select on orders to public;
+
+-- 권한 취소 - revoke
+-- grant문으로 허가한 권한을 취소, 회수하는 명령이다
+-- 문법
+/*
+    revoke 권한 [(컬럼[,...n])[,...n]
+        [on 객체]from{사용자|롤|public[,...n]}
+*/
+-- mdguest에게 부여된 book테이블의 select권한을 취소하시오.
+revoke select on book from mdguest;
+
+
+
+
+
+
+
 
 
 

@@ -113,6 +113,90 @@ create user mdguest2 identified by mdguest2
 default tablespace md_tbs;
 
 -- 권한 관리
+-- mdguest, mdguest2 사용자에게 데이터베이스 접속(connect) 및
+-- 테이블 생성(resource) 권한, 
+-- 테이블스페이스를 무제한으로 사용할 수 있는 권한(unlimited tablespace)
+-- 을 부여하시오
+-- pdb1/system 계정으로 접속
+grant connect,resource, unlimited tablespace to mdguest;
+grant connect,resource, unlimited tablespace to mdguest2;
+
+-- 권한 허가 - grant
+-- grant 문은 객체를 생성한 소유자가 대상 객체에 대한 권한을
+-- 다른 사용자에게 허가하는 명령이다
+-- 문법
+/* 
+    grant 권한 [(컬럼[,...])][,...n]
+        [on객체]to{사용자|롤|public[,...n]}
+        [with grant option]
+*/
+-- [,...n]은 반복 가능을 의미한다
+-- 권한 : 허가할 권한을 지정한다
+-- alter, delete, execute, index, insert, references, select, update
+-- 컬럼 : 사용 권한을 부여할 테이블의 열 이름을 지정한다
+-- 객체: 사용 권한을 부여할 객체를 지정한다. 객체는 테이블이나 뷰 등을 말한다
+-- to 사용자: 사용자나 권한의 묶음인 롤(role)에 권한을 추가할 수 있다
+-- public은 모든 사용자가 사용할 수 있도록 공개적으로 권한을 부여한다는 의미
+-- with grant option:허가 받은 권한을 다른 사용자에게 다시 부여할 수 있다
+
+-- madang/madang 유저를 생성
+create user madang identified by madang;
+-- madang 사용자에게 권한 부여
+grant connect, resource, unlimited tablespace to madang;
+
+commit;
+
+-- pdb1_madang 계정으로 접속
+CREATE TABLE Book (
+bookid NUMBER(2) PRIMARY KEY,
+bookname VARCHAR2(40),
+publisher VARCHAR2(40),
+price NUMBER(8)
+);
+INSERT INTO Book VALUES(1, '축구의 역사', '굿스포츠', 7000);
+INSERT INTO Book VALUES(2, '축구아는 여자', '나무수', 13000);
+INSERT INTO Book VALUES(3, '축구의 이해', '대한미디어', 22000);
+INSERT INTO Book VALUES(4, '골프 바이블', '대한미디어', 35000);
+INSERT INTO Book VALUES(5, '피겨 교본', '굿스포츠', 8000);
+INSERT INTO Book VALUES(6, '역도 단계별기술', '굿스포츠', 6000);
+INSERT INTO Book VALUES(7, '야구의 추억', '이상미디어', 20000);
+INSERT INTO Book VALUES(8, '야구를 부탁해', '이상미디어', 13000);
+INSERT INTO Book VALUES(9, '올림픽 이야기', '삼성당', 7500);
+INSERT INTO Book VALUES(10, 'Olympic Champions', 'Pearson', 13000);
+
+select * from book;
+
+CREATE TABLE Customer (
+custid NUMBER(2) PRIMARY KEY,
+name VARCHAR2(40),
+address VARCHAR2(50),
+phone VARCHAR2(20)
+);
+INSERT INTO Customer VALUES (1, '박지성', '영국 맨체스타', '000-5000-0001');
+INSERT INTO Customer VALUES (2, '김연아', '대한민국 서울', '000-6000-0001');
+INSERT INTO Customer VALUES (3, '장미란', '대한민국 강원도', '000-7000-0001');
+INSERT INTO Customer VALUES (4, '추신수', '미국 클리블랜드', '000-8000-0001');
+INSERT INTO Customer VALUES (5, '박세리', '대한민국 대전', NULL);
+CREATE TABLE Orders (
+orderid NUMBER(2) PRIMARY KEY,
+custid NUMBER(2) REFERENCES Customer(custid),
+bookid NUMBER(2) REFERENCES Book(bookid),
+saleprice NUMBER(8),
+orderdate DATE
+);
+INSERT INTO Orders VALUES (1, 1, 1, 6000, TO_DATE('2020-07-01','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (2, 1, 3, 21000, TO_DATE('2020-07-03','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (3, 2, 5, 8000, TO_DATE('2020-07-03','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (4, 3, 6, 6000, TO_DATE('2020-07-04','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (5, 4, 7, 20000, TO_DATE('2020-07-05','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (6, 1, 2, 12000, TO_DATE('2020-07-07','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (7, 4, 8, 13000, TO_DATE('2020-07-07','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (8, 3, 10, 12000, TO_DATE('2020-07-08','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (9, 2, 10, 7000, TO_DATE('2020-07-09','yyyy-mm-dd'));
+INSERT INTO Orders VALUES (10, 3, 8, 13000, TO_DATE('2020-07-10','yyyy-mm-dd'));
+
+commit;
+
 
 
 

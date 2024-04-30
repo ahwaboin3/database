@@ -17,3 +17,13 @@ mdguest
 비밀번호 저장 체크
 서비스이름
 xepdb1
+
+pdb1_madang
+사용자 이름
+madang
+비밀번호
+madang
+비밀번호 저장 체크
+서비스이름
+xepdb1
+
